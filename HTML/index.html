@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model 3 | Testla</title>
     <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" media=”screen”>
+    <link rel="stylesheet" type="text/css" href="/home/adam/AB/Bootcamp/Weekend_Projects/Tesla/CSS/style.css" media=”screen”>
     <script src="https://kit.fontawesome.com/b0b659ad54.js" crossorigin="anonymous"></script>
     <style>
         * {
@@ -21,31 +21,38 @@
             height: 100vh;
             width: 100vw;
             background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D);
-            background-position: center;
+            background-position: 0px 35%;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 100%;
         }
         #navcenter {
-            width: 650px;
-            height: 55px;
+            text-align: center;
             position: sticky;
-            left: 647px;
-            top: 20px;
+            margin-right: 40px;
+            margin-top: -4px;
         }
         #navright {
-            font-size: 10px;
-            width: 239px;
+            text-align: right;
             position: sticky;
-            left: 1650px;
-            bottom: 910px;
+            width: 300px;
+            bottom: 1000px;
+            left: 1575px;
+            font-size: 10px;
+
         }
         ul {
-            list-style: none;
-            
+            list-style: none;    
         }
         ul li{
             display: inline;
         }
+                #navleft  ul{
+        list-style: disc;
+        }
+        #navleft  ul li{
+        display: block;
+        }
+
         button {
             transition-duration: 0.5s;
             font-family: 'Gotham', sans-serif;
@@ -54,13 +61,18 @@
             background: none;
             border: 100px;
             border-radius: 15px;
-            font-size: 15px;
+            font-size: 14px;
             padding: 10px 17px;
             margin-right: -5px;
         }
         button:hover {
         background: rgba(255, 255, 255, 0.26);
         backdrop-filter: blur(10px);
+        }
+        .footer button {
+            background: none;
+            color: black;
+
         }
         #svg {
             width: 120px;
@@ -70,29 +82,48 @@
         }
         #model3 {
             color: white;
-            font-size: 21px;
-            position: fixed;
+            font-size: 20px;
+            position: relative;
+            top: -25px;
             text-align: center;
         }
         h1 {
             font-weight: 500;
         }
-        #page2{
+        .footer {
+            position: relative;
+            left: 700px;
+            border: 3px black solid;
+            width: 600px;
+            background: white;
+            top: 600px;
+            text-align: center;
+        }
+        .footer h2 {
+            display: inline;
+            padding-right: 10px;
+        }
+        .footer h6 {
+            display: inline;
+        }
+        /* #page2{
             height: 100vh;
             width: 100vw;
             background: #F5F5F5;
             background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero);
-            background-position: left;
+            background-position: 51% 110%;
             background-repeat: no-repeat;
-            background-size: 100vw 100vh;
-        /* } */
-        /* #page3{
+            background-size: 78%;
+        }
+
+        #page3{
             height: 100vh;
             width: 100vw;
             background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 150vh;
+            background-position: 50% 160%;
+            background-size: cover;
         } */
 
         
@@ -114,33 +145,64 @@
                 </div>
                 <div id="navcenter" class="navbar">
                     <ul id="nav">
-                        <li class="button1"><button>Model S</button></li>
-                        <li class="button1"><button>Model 3</button></li>
-                        <li class="button1"><button>Model X</button></li>
-                        <li class="button1"><button>Model Y</button></li>
-                        <li class="button1"><button>Solar Roof</button></li>
-                        <li class="button1"><button>Solar Panels</button></li>
+                        <li id="button1"><button>Model S</button></li>
+                        <li id="button2"><button>Model 3</button></li>
+                        <li id="button3"><button>Model X</button></li>
+                        <li id="button4"><button>Model Y</button></li>
+                        <li id="button5"><button>Solar Roof</button></li>
+                        <li id="button6"><button>Solar Panels</button></li>
                     </ul>
                 </div>
                 <div id="navright" class="navbar">
                     <ul>
-                        <li><button>Shop</button></li>
-                        <li><button>Account</button></li>
-                        <li><button>Menu</button></li>
+                        <li id="button7"><button>Shop</button></li>
+                        <li id="button8"><button>Account</button></li>
+                        <li id="button9"><button>Menu</button></li>
                     </ul>
                 </div>
-                <div id="model3">
-                    <h1>Model 3</h1>
+                <div id="navleft" class="navbar">
+                    <ul>
+                        <li class="button10"><button>Model 3</button></li>
+                        <li class="button11"><button>Safety</button></li>
+                        <li class="button12"><button>Performance</button></li>
+                    </ul>
                 </div>
             </div>
-            <div id="footer" class="footer"></div>
+            <div id="model3">
+                <h1>Model 3</h1>
+            </div>
+            <div id="footer1" class="footer">
+                <h2>3.1 s</h2>
+                <h2>353mi</h2>
+                <h2>AWD</h2>
+                <button id="order" class="order">ORDER NOW</button>
+            </div>
+            <div id="footer2" class="footer">
+                <h6>0-60 mph*</h6>
+                <h6>Range (EPA est.)</h6>
+                <h6>Dual Motor</h6>
+            </div>
         </div>
-        <div id="page2" class="page">
-
+        <!-- <div id="page2" class="page">
+            <h4>Safety</h4>
+            <h2>Built for Safety</h2>
+            <p>
+                Safety is the most important part of the<br>overall Model 3 design. The metal<br>structure is a combination of aluminum<br>and steel, for maximum strength in every<br>area. In a roof-crush test, Model 3 resisted<br>four times its own mass, even with an all-<br>glass roof: that's the same weight as two<br>full-grown African elephants.
+            </p>
+            <div id="stars" class="list">
+                <ul>
+                    <li>Driver<h6>Frontal</h6></li>
+                    <li>Passenger<h6>Frontal</h6></li>
+                    <li>Front Seat<h6>Side</h6></li>
+                    <li>Front Seat<h6>Side</h6></li>
+                    <li>Rollover</li>
+                    
+                </ul>
+            </div>
         </div>
         <div id="page3" class="page">
 
-        </div>
+        </div> -->
     </div>
 </body>
 </html>

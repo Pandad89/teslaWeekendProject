@@ -5,6 +5,7 @@
 }
 body {
     font-family: "Gotham", sans-serif;
+    scroll-snap-type: y mandatory 300px;
 }
 #page1{
     height: 100vh;
@@ -13,6 +14,8 @@ body {
     background-position: 0px 35%;
     background-repeat: no-repeat;
     background-size: 100%;
+    scroll-snap-align: start;
+
 }
 #navcenter {
     text-align: center;
@@ -40,12 +43,12 @@ ul li{
     top: 348px;
 }
 #navleft  ul li{
-display: block;
-background: white;
-width: 3px;
-top: 1000px;
-margin-left: 12px ;
-margin-top: 10px;
+    display: block;
+    background: white;
+    width: 3px;
+    top: 1000px;
+    margin-left: 12px ;
+    margin-top: 10px;
 }
 button {
     transition-duration: 0.5s;
@@ -60,9 +63,9 @@ button {
     margin-right: -5px;
 }
 button:hover {
-background: rgba(255, 255, 255, 0.26);
-backdrop-filter: blur(10px);
-cursor: pointer;
+    background: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
 }
 #navleft button{
     width: 100px;
@@ -95,25 +98,22 @@ cursor: pointer;
     top: 22px;
     left: 47px;
 }
-#svg:hover {
-    cursor: pointer;
-}
 .outer{
     position: absolute;
-    bottom: 98px;
+    bottom: 84px;
     left: 660px;
 }
 .inner svg{
     height: 17px;
     position: absolute;
-    bottom: 102px;
+    bottom: 88px;
     left: 660px;
 }
 .needle svg{
     height: 20px;
     /* width: 1px; */
     position: absolute;
-    bottom: 93px;
+    bottom: 80px;
     transform: rotate(90deg);
     left: 669px;
 }
@@ -152,7 +152,7 @@ h1 {
     left: 578px;
 }
 #question button {
-    position: sticky;
+    position: fixed;
     background: white;
     margin-left: 1835px;
     margin-top: 560px;
@@ -161,7 +161,7 @@ h1 {
     height: 50px;
 }
 #question button img {
-    margin-left: -5px;
+    margin-left: -3px;
     margin-top: 3px;
 }
 #question button:hover {
@@ -172,31 +172,102 @@ h1 {
     width: 100vw;
     background: #F5F5F5;
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero);
-    background-position: 51% 50%;
+    background-position: 51% 110%;
     background-repeat: no-repeat;
     background-size: 78%;
 }
 #safety {
-    padding-top: 40px;
-    padding-left: 50px;
+    width: 800px;
 }
-#safety h4 {
-    font-weight: 400;
+#safety h4{
+    padding-left: 48px;
+    padding-top: 60px;
     font-size: 17px;
+    font-weight: 400;
 }
 #safety h2 {
+    padding-left: 48px;
+    padding-top: 2px;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 30px;
 }
+#safety p {
+    padding-left: 48px;
+    line-height: 1.75;
+    font-size: 14px;
+    width: 400px;
+}
+#stars {
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 330px;
+    height: 340px;
+    border-radius: 20px;
+    background-color: #E2E4E4;
+    color: #2E3136;
+    padding: 25px 15px;
+}
+#stars h2 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.25;
 
-/* #page3{
+}
+#stars li {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.75;
+}
+#stars h6 {
+    font-weight: 400;
+}
+#plus button{
+    position: absolute;
+    top: 1810px;
+    left: 17px;
+    border: 3px black solid;
+    color: black;
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+}
+#plus h2 {
+    font-weight: 400;
+}
+#plus button:hover{
+    background-color: black;
+    color: white;
+}
+#learn h4 {
+    position: absolute;
+    top: 1825px;
+    left: 110px;
+    font-weight: 400;
+    font-size: 13px;
+}
+#order button {
+    position: absolute;
+    top: 1808px;
+    left: 216px;
+    border: 3px black solid;
+    border-radius: 100px;
+    color: black;
+}
+#order button:hover {
+    background-color: black;
+    color: white;
+}
+#page3{
     height: 100vh;
     width: 100vw;
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop);
     background-position: center;
     background-repeat: no-repeat;
-    background-position: 50% 160%;
+    background-position: 50% 140%;
     background-size: cover;
-} */
-
-
+}

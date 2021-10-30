@@ -35,18 +35,23 @@ ul {
 ul li{
     display: inline;
 }
-        #navleft  ul{
-list-style: disc;
+#navleft  ul{
+    position: fixed;
+    top: 348px;
 }
 #navleft  ul li{
 display: block;
+background: white;
+width: 3px;
+top: 1000px;
+margin-left: 12px ;
+margin-top: 10px;
 }
-
 button {
     transition-duration: 0.5s;
+    color: white;
     font-family: 'Gotham', sans-serif;
     font-weight: 500;
-    color: white;
     background: none;
     border: 100px;
     border-radius: 15px;
@@ -57,9 +62,21 @@ button {
 button:hover {
 background: rgba(255, 255, 255, 0.26);
 backdrop-filter: blur(10px);
+cursor: pointer;
+}
+#navleft button{
+    width: 100px;
+    height: 10px;
+    color: transparent;
+}
+#navleft button:hover {
+    color: white;
+    backdrop-filter: none;
+    background: none;
 }
 .footer button {
     background: none;
+    margin-top: 85px;
     padding: 10px 30px;
     border: 3px white solid;
     border-radius: 100px;
@@ -69,17 +86,42 @@ backdrop-filter: blur(10px);
     background: white;
     color: black;
 }
+#speed svg{
+    width: 50px;
+}
 #svg {
     width: 120px;
     position: sticky;
     top: 22px;
     left: 47px;
 }
+#svg:hover {
+    cursor: pointer;
+}
+.outer{
+    position: absolute;
+    bottom: 98px;
+    left: 660px;
+}
+.inner svg{
+    height: 17px;
+    position: absolute;
+    bottom: 102px;
+    left: 660px;
+}
+.needle svg{
+    height: 20px;
+    /* width: 1px; */
+    position: absolute;
+    bottom: 93px;
+    transform: rotate(90deg);
+    left: 669px;
+}
 #model3 {
     color: white;
     font-size: 20px;
     position: relative;
-    top: -25px;
+    top: 75px;
     text-align: center;
 }
 h1 {
@@ -109,17 +151,45 @@ h1 {
 #footer2 {
     left: 578px;
 }
+#question button {
+    position: sticky;
+    background: white;
+    margin-left: 1835px;
+    margin-top: 560px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+#question button img {
+    margin-left: -5px;
+    margin-top: 3px;
+}
+#question button:hover {
+    cursor: pointer;
+}
 #page2{
     height: 100vh;
     width: 100vw;
     background: #F5F5F5;
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero);
-    background-position: 51% 110%;
+    background-position: 51% 50%;
     background-repeat: no-repeat;
     background-size: 78%;
 }
+#safety {
+    padding-top: 40px;
+    padding-left: 50px;
+}
+#safety h4 {
+    font-weight: 400;
+    font-size: 17px;
+}
+#safety h2 {
+    font-weight: 500;
+    font-size: 26px;
+}
 
-#page3{
+/* #page3{
     height: 100vh;
     width: 100vw;
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop);
@@ -127,6 +197,6 @@ h1 {
     background-repeat: no-repeat;
     background-position: 50% 160%;
     background-size: cover;
-}
+} */
 
 
